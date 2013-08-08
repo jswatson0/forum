@@ -7,6 +7,14 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
+# AFTERMARKET GEMS
+# Devise for User model and authentication
+gem 'devise'
+
+# Forem and dependencies
+gem 'forem', :github => "radar/forem"
+gem 'will_paginate', '3.0.4'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
