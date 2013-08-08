@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-	attr_accessible :email, :password, :password_confirmation
+	attr_accessible :email, :password, :password_confirmation, :name
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -15,7 +15,11 @@ class User < ActiveRecord::Base
 
   # Forem depends on email method to display avatars using Gravatar
   # def email
-  # 	email_address
+  # 	email
   # end
+
+  def name
+  	email
+  end
 
 end
